@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <body>
+        <title>javascript functions example</title>
+        <script>
+            // javascript function to greet the user
+            function greetUser(){
+                var name=document.getElementById("name").value;
+                if(name){
+                    alert("hello,"+name+"!");
+                } else{
+                    alert("please enter your name.");
+                }
+            }
+            //javascript function to add two numbers
+            function addNumbers(){
+                var num1=parseInt(document.getElementById("num1").value);
+                var num2=parseInt(document.getElementById("num2").value);
+                var sum=num1+num2;
+                document.getElementById("result").innerHTML="the sum is:"+sum;
+            }
+        </script>
+       </head>
+       <body>
+        <h1>javascript functions examples</h1>
+        greet user form
+        <h2>greet user</h2>
+        <label for="name">enter your name:</label>
+        <input type="text" id="name">
+        <button onclick="greetuser()">greet</button>
+         <br><br>
+
+         
+         <h2>add numbers</h2>
+         <label for="num1">number 1:</label>
+         <input type="number" id="num1">
+         <label for="num2">number 2:</label>
+         <input tyoe="number" id="num2">
+         <button onclick="addnumbers()">add</button>
+
+         <p id="result"></p>
+    </body>
+</html>

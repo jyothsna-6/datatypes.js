@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Conditional Statements example</title>
+        <script>
+            function checkDay(){
+            let day=document.getElementById("day").value.toLowerCase();
+            let message="";
+
+            if(day === "monday"){
+                message = "start of the work week!";
+            } else if(day === "friday"){
+                message = "Almost the weekend!";
+            }else if(day === "sunday"){
+                message="Enjoy your rest day!";
+            }else{
+                message="It's just another day!";
+            }
+
+            document.getElementById("result").innerHTML=message;
+        }
+        </script>>
+</head>
+<body>
+    <h2>enter a day of the week</h2>
+    <input type="text" id="day" placeholder="enter a day">
+    <button onclick="checkday()">submit</button>
+    <p id="result"></p>
+    </body>
+    </html>

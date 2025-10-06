@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>javascript data types</title>
+    </head>
+    <body>
+        <h1>javascript data types example</h1>
+        <div id="output"></div>
+        <script>
+            //primitive Data types
+            let number=40;      //Number
+            let name="chinne";  //String
+            let isActive=true;  //Boolean
+            let unknown=null;   //Null
+            let notDefined;     //Undefined
+
+            //object datatypes
+            let person={        //object
+                name:"chinne",
+                age:23
+            };
+
+            let colors = ["red","skyblue","white","black"]; //Array(which is a type of object)
+
+            //displaying output in the HTML div
+            let output=document.getElementById("output");
+
+            //output examples of different data types
+            output.innerHTML=`
+            <p>Number: ${number}</p>
+            <p>String: ${name}</p>
+            <p>Boolean: ${isActive}</p>
+            <p>Null: ${unknown}</p>
+            <p>Undefinned: ${notDefined}</p>
+            <p>person object(Name): ${person.name}</p>
+            <p>Array(Second color): ${colors[1]}</p>
+            `;
+        </script>
+
+    </body>
+</html>
